@@ -16,7 +16,7 @@ jobs:
 
       # Install dependencies
       - name: Install
-        run: npm ci
+        run: npm i
 
       # Build
       - name: Build

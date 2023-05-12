@@ -1,0 +1,16 @@
+name: Bundle stats
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  measure-bundle-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Measure bundle size
+        uses: actions/github-script@v6
+        with: 
+          script: |
+            console.log("First github action");

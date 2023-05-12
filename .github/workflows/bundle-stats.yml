@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Measure bundle size
         uses: vio/bundle-stats-action@v1.3.4
+        with:
+          webpack-stats-path: 'artifacts/bundle-stats.json'

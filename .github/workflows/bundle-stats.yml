@@ -20,7 +20,7 @@ jobs:
 
       # Build
       - name: Build
-        run: npm ci
+        run: npm run build
 
       - name: Measure bundle size
         uses: vio/bundle-stats-action@v1.3.4

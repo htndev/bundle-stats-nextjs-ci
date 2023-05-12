@@ -10,7 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Measure bundle size
-        uses: actions/github-script@v6
-        with: 
-          script: |
-            console.log("First github action");
+        uses: vio/bundle-stats-action@v1.3.4

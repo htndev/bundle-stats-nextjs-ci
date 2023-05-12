@@ -9,6 +9,19 @@ jobs:
   measure-bundle-stats:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      # Install dependencies
+      - name: Install
+        run: npm ci
+
+      # Build
+      - name: Build
+        run: npm ci
+
       - name: Measure bundle size
         uses: vio/bundle-stats-action@v1.3.4
         with:

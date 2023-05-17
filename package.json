@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bundle-stats": "bundle-stats .next/artifacts/bundle-stats.json --baseline --json",
+    "analyze": "next build"
   },
   "dependencies": {
     "@types/node": "20.1.3",
@@ -21,6 +23,8 @@
   },
   "devDependencies": {
     "bundle-stats": "^4.3.4",
-    "next-plugin-bundle-stats": "^4.3.4"
+    "bundle-stats-webpack-plugin": "^4.3.4",
+    "next-plugin-bundle-stats": "^4.3.4",
+    "webpack-stats-plugin": "^1.1.1"
   }
 }

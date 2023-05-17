@@ -26,4 +26,4 @@ jobs:
         uses: vio/bundle-stats-action@v1.3.4
         with:
           id: bundle-size
-          webpack-stats-path: './artifacts/bundle-stats.json'
+          webpack-stats-path: '.next/artifacts/bundle-stats.json'
